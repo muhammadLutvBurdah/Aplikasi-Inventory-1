@@ -10,7 +10,7 @@
                 <div class="demo-vertical-spacing demo-only-element col-md-12 my-3">
                     <div class="form-group">
                         <label for="NamaKelas">Nama Kelas</label>
-                        <input type="text" class="form-control" id="NamaKelas" name="NamaKelas" required>
+                        <input type="text" class="form-control" id="NamaKelas" name="NamaKelas" autocomplete="off" required>
                     </div>
                 </div>
                 <div class="col-md-12">

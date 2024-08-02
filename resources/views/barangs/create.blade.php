@@ -26,7 +26,7 @@
                         <div>
                             <div class="form group"> <label for="NamaBarang">Nama Barang</label>
                                 <input type="text" class="form-control" id="NamaBarang" name="NamaBarang"
-                                    value="{{ old('NamaBarang') }}" required>
+                                    value="{{ old('NamaBarang') }}" autocomplete="off" required>
                             </div>
                             <div class="form group"> <label for="StockQuantity">Stock</label>
                                 <input type="number" name="StockQuantity" id="StockQuantity" class="form-control"

@@ -17,7 +17,7 @@
 
                     <div class="form-group">
                         <label for="NamaJabatan">Nama Jabatan</label>
-                        <input type="text" class="form-control bg-gradient" id="NamaJabatan" name="NamaJabatan" required>
+                        <input type="text" class="form-control bg-gradient" id="NamaJabatan" name="NamaJabatan" autocomplete="off" required>
                     </div>
                     <div class="row justify-content-end mt-2">
                         <div class="col-auto">

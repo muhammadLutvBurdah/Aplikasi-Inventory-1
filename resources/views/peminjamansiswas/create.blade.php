@@ -59,17 +59,17 @@
 
                         <div class="input-group mb-3">
                             <span class="input-group-text" id="basic-addon11">Siswa</span>
-                            <input type="text" id="Siswa" class="form-control" name="NamaSiswa" placeholder="NamaSiswa" aria-label="NamaSiswa">
+                            <input type="text" id="Siswa" class="form-control" name="NamaSiswa" placeholder="NamaSiswa" autocomplete="off" aria-label="NamaSiswa">
                         </div>
 
                         <div class="input-group mb-3">
                             <span class="input-group-text" id="basic-addon11">Kelas</span>
-                            <input type="text" id="Kelas" class="form-control" name="Kelas" placeholder="Kelas" aria-label="Kelas">
+                            <input type="text" id="Kelas" class="form-control" name="Kelas" placeholder="Kelas" autocomplete="off" aria-label="Kelas">
                         </div>
 
                         <div class="input-group mb-3">
                             <span class="input-group-text" id="basic-addon11">Ruang</span>
-                            <input type="text" id="Ruang" class="form-control" name="Ruang" placeholder="Ruang" aria-label="Ruang">
+                            <input type="text" id="Ruang" class="form-control" name="Ruang" placeholder="Ruang" autocomplete="off" aria-label="Ruang">
                         </div>
 
                         <div class="d-flex align-items-center mb-3">

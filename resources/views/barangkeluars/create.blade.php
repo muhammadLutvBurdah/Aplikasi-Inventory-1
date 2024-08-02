@@ -68,7 +68,7 @@
 
                     <div class="input-group mb-3">
                         <span class="input-group-text" id="basic-addon11">Jenis Barang</span>
-                        <input type="text" class="form-control" name="Jenis" placeholder="Jenis Barang" aria-label="Jenis Barang" />
+                        <input type="text" class="form-control" name="Jenis" placeholder="Jenis Barang" aria-label="Jenis Barang" autocomplete="off"/>
                     </div>
 
                 <div class="row justify-content-end mt-2">

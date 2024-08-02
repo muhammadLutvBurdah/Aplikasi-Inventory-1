@@ -52,12 +52,12 @@
 
                         <div class="input-group mb-3">
                             <span class="input-group-text" id="basic-addon11">Karyawan</span>
-                            <input type="text" id="Karyawan" class="form-control" name="NamaKaryawan" placeholder="NamaKaryawan" aria-label="NamaKaryawan">
+                            <input type="text" id="Karyawan" class="form-control" name="NamaKaryawan" placeholder="NamaKaryawan" autocomplete="off" aria-label="NamaKaryawan">
                         </div>
 
                         <div class="input-group mb-3">
                             <span class="input-group-text" id="basic-addon11">Jabatan</span>
-                            <input type="text" id="Jabatan" class="form-control" name="Jabatan" placeholder="Jabatan" aria-label="Jabatan">
+                            <input type="text" id="Jabatan" class="form-control" name="Jabatan" placeholder="Jabatan" autocomplete="off" aria-label="Jabatan">
                         </div>
 
                         <div class="d-flex align-items-center mb-3">

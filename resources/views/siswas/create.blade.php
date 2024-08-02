@@ -19,11 +19,11 @@
                 <div class="col-md-12">
                     <div class="form-group">
                         <label for="Nisn">Nisn</label>
-                        <input type="text" class="form-control" id="Nisn" name="Nisn" value="{{ old('Nisn') }}"  required>
+                        <input type="text" class="form-control" id="Nisn" name="Nisn" autocomplete="off" value="{{ old('Nisn') }}"  required>
                     </div>
                     <div class="form-group">
                         <label for="NamaSiswa">Nama Siswa</label>
-                        <input type="text" class="form-control" id="NamaSiswa" name="NamaSiswa" value="{{ old('NamaSiswa') }}"  required>
+                        <input type="text" class="form-control" id="NamaSiswa" name="NamaSiswa" autocomplete="off" value="{{ old('NamaSiswa') }}"  required>
                     </div>
                     <div class="form-group">
                         <label for="RuangID">Ruang</label>

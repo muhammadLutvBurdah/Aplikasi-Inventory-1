@@ -1,7 +1,6 @@
 <style>
     form {
         margin-top: 3rem;
-        /* Sesuaikan nilai sesuai kebutuhan desain Anda */
     }
 </style>
 
@@ -25,18 +24,18 @@
                 <div class="demo-vertical-spacing demo-only-element col-md-19 my-3">
 
                     <div class="form-group">
-                        <label for="Email">Nik</label>
-                        <input type="number" class="form-control" id="Nik" name="Nik" value="{{old('Nik') }}" required>
+                        <label for="NIK">Nik</label>
+                        <input type="number" class="form-control" id="Nik" name="Nik" autocomplete="off" value="{{old('Nik') }}" required>
                     </div>
 
                     <div class="form-group">
                         <label for="Email">Email</label>
-                        <input type="text" class="form-control" id="Email" name="Email" value="{{old('Email') }}" required>
+                        <input type="text" class="form-control" id="Email" name="Email" autocomplete="off" value="{{old('Email') }}" required>
                     </div>
 
                     <div class="form-group">
                         <label for="NamaKaryawan">Nama Karyawan</label>
-                        <input type="text" class="form-control" id="NamaKaryawan" name="NamaKaryawan" value="{{old('NamaKaryawan') }}" required>
+                        <input type="text" class="form-control" id="NamaKaryawan" name="NamaKaryawan" autocomplete="off" value="{{old('NamaKaryawan') }}" required>
                     </div>
 
                     <div class="form-group">
@@ -51,12 +50,12 @@
 
                     <div class="form-group">
                         <label for="NoTelp">No Telepon</label>
-                        <input type="text" inputmode="numeric" class="form-control" id="NoTelp" name="NoTelp" value="{{old('NoTelp') }}" required>
+                        <input type="text" inputmode="numeric" class="form-control" id="NoTelp" name="NoTelp" value="{{old('NoTelp') }}" autocomplete="off" required>
                     </div>
 
                     <div class="form-group">
                         <label for="Alamat">Alamat</label>
-                        <input type="text" class="form-control" id="Alamat" name="Alamat" value="{{old('Alamat') }}" required>
+                        <input type="text" class="form-control" id="Alamat" name="Alamat" value="{{old('Alamat') }}" autocomplete="off" required>
                     </div>
 
                     <div class="row justify-content-end mt-2">

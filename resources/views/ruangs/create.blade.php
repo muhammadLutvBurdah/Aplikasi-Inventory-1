@@ -16,7 +16,7 @@
                 <div class="demo-vertical-spacing demo-only-element col-md-19 my-3">
                     <div class="form-group">
                         <label for="NamaRuang">Nama Ruangan</label>
-                        <input type="text" class="form-control" id="NamaRuang" name="NamaRuang" required>
+                        <input type="text" class="form-control" id="NamaRuang" name="NamaRuang" autocomplete="off" required>
                     </div>
                     <div class="row justify-content-end mt-2">
                         <div class="col-auto">
