@@ -1,4 +1,5 @@
-
+@extends('patrial.template')
+@section('content')
 <div class="table-responsive">
     <div class="card card-info card-outline">
         <div class="card-header">
@@ -31,6 +32,5 @@
     </div>
 </div>
 
-
-
+@endsection
 

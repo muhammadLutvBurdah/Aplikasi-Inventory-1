@@ -11,6 +11,8 @@ class SiswaController extends Controller
 {
     public function index(Request $request)
     {
+        $ruangs = Ruang::all();
+        $kelass = Kelas::all();
         $search = $request->input('search');
 
         // Ambil data siswa dan urutkan secara menurun berdasarkan tanggal pembuatan
@@ -21,7 +23,7 @@ class SiswaController extends Controller
             ->latest() // Mengurutkan berdasarkan tanggal pembuatan secara menurun
             ->get();   // Mengambil semua data tanpa paginasi
 
-        return view('siswas.index', compact('siswas', 'search'));
+        return view('siswas.index', compact('siswas', 'search', 'ruangs', 'kelass'));
     }
 
     public function create()
@@ -47,6 +49,7 @@ class SiswaController extends Controller
 
         return redirect()->route('siswas.index')->with('success', 'Siswa Created Successfully.');
     }
+    
 
     public function edit($id)
     {
