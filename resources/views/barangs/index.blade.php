@@ -1,36 +1,28 @@
-<!-- Tambahkan styling CSS untuk mengurangi ukuran padding dan margin -->
 <style>
     .table {
         margin-bottom: 0;
-        /* Mengurangi margin bottom pada tabel */
     }
 
     .table th,
     .table td {
         padding: 0.5rem;
-        /* Mengurangi padding pada sel header dan sel data */
         font-size: 14px;
-        /* Menyesuaikan ukuran font */
     }
 
     .input-group {
         margin-bottom: 0;
-        /* Mengurangi margin bottom pada input-group */
     }
 
     .btn-sec {
         margin-bottom: 10px;
-        /* Mengurangi margin bottom pada tombol "Create New Barang" */
     }
 
     .alert {
         margin: 10px 0;
-        /* Mengurangi margin pada elemen alert */
     }
 
     .mb-3 {
         margin-bottom: 10px;
-        /* Mengurangi margin bottom pada form search */
     }
 </style>
 
@@ -40,7 +32,7 @@
 @if(session('success'))
 <div class="alert alert-success" style="margin-top: 50px;">{{ session('success') }}</div>
 @endif
-<a href="{{ route('barangs.create') }}" class="btn btn-primary mt-5">Create New Barang</a>
+<a href="{{ route('barangs.create') }}" class="btn btn-primary mt-5"> <i class="fas fa-user-plus"></i>Create New Barang</a>
 <form action="{{ route('barangs.index') }}" method="GET" class="">
     <div class="input-group p-3 mb-3">
         <input type="text" name="search" class="form-control" placeholder="Search Barang" value="{{ request('search') }}">

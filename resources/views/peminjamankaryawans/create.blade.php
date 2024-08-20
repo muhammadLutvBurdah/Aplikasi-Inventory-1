@@ -180,7 +180,7 @@
             statusRadio.forEach(function(radio) {
                 radio.addEventListener('change', function() {
                     if (this.value === 'menetap') {
-                        batasPengembalianField.value = ''; // Clear the value
+                        batasPengembalianField.value = ''; 
                         batasPengembalianField.setAttribute('disabled', true);
                         tanggalPengembalianField.value = '';
                         tanggalPengembalianField.setAttribute('disabled', true);
@@ -199,7 +199,7 @@
         $(document).on("click", "#create", function() {
             Swal.fire({
                 title: "Hallo!",
-                text: "Are you sure you want to make a transaction?",
+                text: "Anda yakin ingin melakukan transaksi?",
                 icon: "question",
                 showCancelButton: true,
                 confirmButtonColor: "#3085d6",
@@ -210,7 +210,7 @@
 
                     Swal.fire({
                         title: "Are you sure?",
-                        text: "Do you want to print a transaction receipt?",
+                        text: "Apakah Anda ingin mencetak struk transaksi?",
                         icon: "question",
                         showCancelButton: true,
                         confirmButtonColor: "#3085d6",

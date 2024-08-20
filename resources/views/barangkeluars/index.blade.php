@@ -1,36 +1,28 @@
-<!-- Tambahkan styling CSS untuk mengurangi ukuran padding dan margin -->
 <style>
     .table {
         margin-bottom: 0;
-        /* Mengurangi margin bottom pada tabel */
     }
 
     .table th,
     .table td {
         padding: 0.5rem;
-        /* Mengurangi padding pada sel header dan sel data */
         font-size: 14px;
-        /* Menyesuaikan ukuran font */
     }
 
     .input-group {
         margin-bottom: 0;
-        /* Mengurangi margin bottom pada input-group */
     }
 
     .btn-sec {
         margin-bottom: 10px;
-        /* Mengurangi margin bottom pada tombol "Create New Barang Keluar" */
     }
 
     .alert {
         margin: 10px 0;
-        /* Mengurangi margin pada elemen alert */
     }
 
     .mb-3 {
         margin-bottom: 10px;
-        /* Mengurangi margin bottom pada form search */
     }
 </style>
 

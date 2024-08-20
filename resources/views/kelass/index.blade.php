@@ -61,7 +61,7 @@
 @if(session('success'))
 <div class="alert alert-success" style="margin-top: 50px;">{{ session('success') }}</div>
 @endif
-<a href="{{ route('kelass.create') }}" class="btn btn-primary mt-5">Create New Kelas</a>
+<a href="{{ route('kelass.create') }}" class="btn btn-primary mt-5"> <i class="fas fa-user-plus"></i>Create New Kelas</a>
 <form action="{{ route('kelass.index') }}" method="GET" class="">
     <div class="input-group p-3 mb-3">
         <input type="text" name="search" class="form-control" placeholder="Search Kelas" value="{{ request('search') }}">

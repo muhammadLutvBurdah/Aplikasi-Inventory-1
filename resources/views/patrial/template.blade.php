@@ -18,6 +18,13 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.4.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
+    {{-- summernote --}}
+    <link href="{{ asset('css/summernote.css') }}" rel="stylesheet">
+    <script src="{{ asset('js/summernote.js') }}"></script>
+
+    {{-- icon --}}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
 
 <body>
