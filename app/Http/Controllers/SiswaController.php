@@ -20,8 +20,8 @@ class SiswaController extends Controller
             ->when($search, function ($query) use ($search) {
                 return $query->where('NamaSiswa', 'like', '%' . $search . '%');
             })
-            ->latest() // Mengurutkan berdasarkan tanggal pembuatan secara menurun
-            ->get();   // Mengambil semua data tanpa paginasi
+            ->latest()
+            ->get();   
 
         return view('siswas.index', compact('siswas', 'search', 'ruangs', 'kelass'));
     }
@@ -63,7 +63,7 @@ class SiswaController extends Controller
     public function update(Request $request, $id)
     {
         $rules = [
-            'Nisn' => 'required|unique:siswa,Nisn|string|max:255', // Validasi untuk Nisn
+            'Nisn' => 'required|string|max:255', 
             'NamaSiswa' => 'required|string|max:255',
             'RuangID' => 'required|exists:ruang,RuangID',
             'KelasID' => 'required|exists:kelas,KelasID',

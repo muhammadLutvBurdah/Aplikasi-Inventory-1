@@ -45,7 +45,7 @@
             </div>
         </div>
     </form>
-    <table class="table table-bordered text-center">
+    <table class="table table-bordered text-center p-5">
         <thead>
             <tr class="table-secondary">
                 <th>No</th>
@@ -144,8 +144,7 @@
                         @method('PUT')
                         <div class="form-group">
                             <label for="editNisn">Nisn</label>
-                            <input type="text" class="form-control" id="editNisn"
-                                value="{{ $siswa->Nisn }} name="Nisn" required readonly>
+                            <input type="text" class="form-control" id="editNisn" name="Nisn" required >
                         </div>
                         <div class="form-group">
                             <label for="editNamaSiswa">Nama Siswa</label>

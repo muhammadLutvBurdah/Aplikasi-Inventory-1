@@ -14,7 +14,8 @@ class CreateSiswaTable extends Migration
     public function up()
     {
         Schema::create('siswa', function (Blueprint $table) {
-            $table->string('Nisn')->primary(); // Jadikan Nisn sebagai primary key
+            $table->bigIncrements('id');
+            $table->string('Nisn');
             $table->string('NamaSiswa');
             $table->unsignedBigInteger('RuangID');
             $table->unsignedBigInteger('KelasID');

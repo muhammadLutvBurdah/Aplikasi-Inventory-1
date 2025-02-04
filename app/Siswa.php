@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Siswa extends Model
 {
     protected $table = 'siswa';
-    protected $primaryKey = 'Nisn';
+    protected $primaryKey = 'id';
     public $incrementing = false; // Tandai bahwa primary key tidak auto-increment
     protected $keyType = 'string';
     protected $fillable = [
