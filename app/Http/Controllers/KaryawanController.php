@@ -11,7 +11,7 @@ class KaryawanController extends Controller
   public function index(Request $request)
 {
     $search = $request->input('search');
-
+    $jabatans = Jabatan::all();
     $karyawans = Karyawan::with('jabatan')
         ->when($search, function ($query) use ($search) {
             return $query->where('NamaKaryawan', 'like', '%' . $search . '%');
@@ -19,7 +19,7 @@ class KaryawanController extends Controller
         ->orderBy('Nik', 'desc') // Urutkan data berdasarkan ID secara terbalik (dari yang terbaru ke yang paling lama)
         ->paginate(10);
 
-    return view('karyawans.index', compact('karyawans', 'search'));
+    return view('karyawans.index', compact('karyawans', 'search', 'jabatans'));
 }
 
     public function create()

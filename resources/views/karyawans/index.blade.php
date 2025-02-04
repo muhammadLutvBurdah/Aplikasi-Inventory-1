@@ -41,7 +41,10 @@
             {{ session('success') }}
         </div>
     @endif
-    <a href="{{ route('karyawans.create') }}" class="btn btn-primary mt-5">Create New Karyawan</a>
+    {{-- <a href="{{ route('karyawans.index') }}" class="btn btn-primary mt-5">Create New Karyawan</a> --}}
+    <button type="button" class="btn btn-primary mt-5" data-toggle="modal" data-target="#createSiswaModal">
+        <i class="fas fa-user-plus"></i> Create New Karyawan
+    </button>
     <form action="{{ route('karyawans.index') }}" method="GET" class="">
         <div class="input-group p-3 mb-3">
             <input type="text" name="search" class="form-control" placeholder="Search Karyawan"
@@ -94,6 +97,58 @@
         </tbody>
     </table>
     {{ $karyawans->appends(request()->except('page'))->links() }}
+
+    <div class="modal fade" id="createSiswaModal" tabindex="-1" role="dialog" aria-labelledby="createSiswaModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="createSiswaModalLabel">Create New Siswa</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="{{ route('karyawans.store') }}" method="POST">
+                        @csrf
+                        <div class="form-group">
+                            <label for="NIK">Nik</label>
+                            <input type="number" class="form-control" id="Nik" name="Nik" autocomplete="off"
+                                value="{{ old('Nik') }}" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="NamaKaryawan">Nama Karyawan</label>
+                            <input type="text" class="form-control" id="NamaKaryawan" name="NamaKaryawan" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="JabatanID">Jabatan</label>
+                            <select name="JabatanID" class="form-control" id="JabatanID">
+                                <option value="">--Select Jabatan--</option>
+                                @foreach ($jabatans as $jabatan)
+                                    <option value="{{ $jabatan->JabatanID }}">{{ $jabatan->NamaJabatan }}</option>
+                                @endforeach
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="Alamat">Alamat</label>
+                            <textarea name="Alamat" id="Alamat" class="form-control" rows="5">{{ old('Alamat') }}</textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="NoTelp">No Telepon</label>
+                            <input type="text" inputmode="numeric" class="form-control" id="NoTelp" name="NoTelp"
+                                value="{{ old('NoTelp') }}" autocomplete="off" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="Email">Email</label>
+                            <input type="text" class="form-control" id="Email" name="Email" autocomplete="off"
+                                value="{{ old('Email') }}" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Save</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
     @section('scripts')
         <script>

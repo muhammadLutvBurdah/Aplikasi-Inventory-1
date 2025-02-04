@@ -32,7 +32,7 @@
     @if (session('success'))
         <div class="alert alert-success" style="margin-top: 50px;">{{ session('success') }}</div>
     @endif
-    <button type="button" class="btn btn-primary mt-5" data-toggle="modal" data-target="#createSiswaModal">
+    <button type="button" class="btn btn-primary mt-5" data-toggle="modal" data-target="#createkaryawanModal">
         <i class="fas fa-user-plus"></i> Create New Siswa
     </button>
 
@@ -82,12 +82,12 @@
 
 
     <!-- Create Siswa Modal -->
-    <div class="modal fade" id="createSiswaModal" tabindex="-1" role="dialog" aria-labelledby="createSiswaModalLabel"
+    <div class="modal fade" id="createkaryawan" tabindex="-1" role="dialog" aria-labelledby="createkaryawanLabel"
         aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="createSiswaModalLabel">Create New Siswa</h5>
+                    <h5 class="modal-title" id="createkaryawanLabel">Create New Siswa</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
